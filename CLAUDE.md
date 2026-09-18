@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+A minimal Express REST API for managing users, backed by an in-memory store.
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 Starter Express API used as the sandbox project for the Claude Code course. This is a teaching repo — do not change the app code unless explicitly asked; the current task is Claude Code setup (CLAUDE.md + permissions), not feature work.
