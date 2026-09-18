@@ -11,3 +11,8 @@ I deliberately left out: a file-by-file directory listing (Claude can discover t
 - **Allow**: `npm test`, `npm run lint` — safe, read-only-ish commands I run constantly; no reason to confirm every time.
 - **Ask**: `git push` — not destructive, but I want a chance to review what's about to leave my machine before it does.
 - **Deny**: reading `./.env` and `git push --force`. Without the `.env` deny rule, Claude could read and potentially echo real secrets (API keys, DB credentials) into a response or a file it writes. Without the force-push deny rule, an agentic slip could silently overwrite shared branch history with no easy way back.
+
+## Verifying the setup
+
+- Run `/memory` inside Claude Code to confirm `CLAUDE.md` is loaded — it opens the file that's currently in context.
+- Run `/permissions` to confirm the allow/ask/deny rules above are active and showing up correctly.
